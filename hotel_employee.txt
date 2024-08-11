@@ -1,0 +1,23 @@
+Software Design:
+	1.Authentication-SignUp,Login,Social Auth,Verification
+	2.Admin Can Update the Banner/Layout
+	3.Admin Can Update the FAQs
+	4.Admin Can Update the Categories Of Cources	
+	5.Cources
+	6.ProfilePage
+	7.Orders
+	8.Notifications
+	9.Analytics for Admin
+	10.Algorithm For Recommendation System
+
+Technology Stack:
+	1.NextJS for frontend
+	2.NodeJS,ExpressJS for backend
+	3.Redis for Caching
+	4.RTK Query
+	5.MongoDB fro database
+	6.Socket.io-real time updates
+
+Things to learn:
+	1.Access Token and Refresh Token
+	2.Social Authentication(new thing to learn)

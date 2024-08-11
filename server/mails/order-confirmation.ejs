@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin: 0 0 10px;
+        }
+
+        p {
+            margin: 0 0 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 5px 0;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Order Confirmation</h1>
+    <p>Dear <strong><%=order.userName%></strong>,</p>
+    <p>Thank you for your order. Your order details are as follows:</p>
+    <ul>
+        <li>Order ID: <strong><%=order._id%></strong></li>
+        <li>Order Date: <strong><%=order.date%></strong></li>
+        <li>Order Name: <strong><%=order.name%></strong></li>
+        <li>Order Price: <strong><%=order.price%></strong></li>
+    </ul>
+    <p>Your Order has been confirmed. Learn and Enjoy the Course Content.</p>
+    <p>Regards,</p>
+    <p>The Team</p>
+</body>
+</html>
