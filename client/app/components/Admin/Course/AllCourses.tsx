@@ -67,7 +67,12 @@ const AllCourses = (props: Props) => {
             renderCell: (params: any) => {
                 return (
                     <>
-                        <Button>
+                        <Button
+                        onClick={() => {
+                            setOpen(!open);
+                            setCourseId(params.row.id);
+                        }}
+                        >
                             <AiOutlineDelete
                                 className="dark:text-white text-black"
                                 size={20}

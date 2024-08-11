@@ -51,6 +51,7 @@ export const editCourse = CatchAsyncError(async (req: Request, res: Response, ne
                 url: mycloud.secure_url
             }
         }
+        console.log(data);
 
         const courseID = req.params.id;
 

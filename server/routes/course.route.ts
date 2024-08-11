@@ -10,6 +10,8 @@ courseRouter.put("/edit-course/:id",updateAcceessToken,isAuthenticated,authorize
 
 courseRouter.get("/get-course/:id",getSingleCourse);
 
+courseRouter.get("/get-admin-courses",isAuthenticated,authorizeRoles("admin"),getAllCoursesAdmin)
+
 courseRouter.get("/get-courses",getAllCourses);
 
 courseRouter.get("/get-course-content/:id",updateAcceessToken,isAuthenticated,getCourseByUser);
